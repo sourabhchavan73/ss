@@ -66,6 +66,87 @@
     footer li {
         line-height: 1.5em;
     }
+
+    .owl-prev, .owl-next  {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5em;
+        margin-top: 3rem;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .app {
+        padding: 2em 0 3em 0;
+    }
+
+    .typography-1 {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    .info-1 {
+        font-size: 0.75em;
+    }
+
+    .btnContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btnContainer button{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .find-partner {
+        padding: 3em 0 3em;
+    }
+
+    .money-back .col-xl-3{
+        margin-bottom: 1.5rem;
+    }
+
+    .feedback {
+        padding: 2.5rem 0 0 0;
+    }
+
+    .get-started {
+        padding: 2rem 0;
+    }
+
+    .typography2-white {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .page-btn-2 {
+        margin-top: 2rem;
+    }
+
+    .social-col{
+        margin-top: 1rem;
+    }
+
+    .app img{
+        width: 100%;
+    }
+
+    .steps-card:first-child{
+        margin-top: 1.5rem;
+    }
+
+    .brand-logo {
+        max-width: 35%;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
