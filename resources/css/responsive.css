@@ -1,0 +1,78 @@
+/* Min */
+@media screen and (min-width: 576px) {
+    .hero-banner-bg{
+        min-height: 110vh;
+        height: 110vh;
+    }
+
+    .select-col{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mid-select{
+        border-right: 1px solid;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imageContainer{
+        display: flex;
+    }
+
+    .block2-img{
+        position: relative;
+        top: 8.5em;
+    }
+
+    footer li:not(:first-child):before {
+        content: "|";
+        padding-right: 5px;
+        position: relative;
+        left: -10px;
+      }
+
+
+}
+
+/* Max */
+@media screen and (max-width: 1350px) {
+    .footer-links{
+        justify-content: space-around;
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    br{
+        display: none;
+    }
+
+    .steps-bgimg {
+        top: -3em;
+        left: -5em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-links{
+        display: block;
+    }
+
+    footer li:before {
+        content: none;
+    }
+
+    footer li {
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-banner-bg{
+        min-height: 75vh;
+    }
+
+
+
+}
