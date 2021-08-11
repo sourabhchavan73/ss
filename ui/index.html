@@ -37,8 +37,9 @@
                                 Account
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Sign In</a>
-                                <a class="dropdown-item" href="#">Sign Out</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registrationModal">Register</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#otpModal">Otp</a>
                             </div>
                         </div>
                     </li>
@@ -667,7 +668,161 @@
     </footer>
 
 
+    <!-- login modal -->
+<div class="modal fade loginregisterModal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <button type="button" class="close d-flex justify-content-end" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <img class="img-fluid" src="../resources/images/modal-close.png" alt="close">
+                </span>
+            </button>
+         
+            <div class="modal-body">
+                <div class="modal-logo text-center">
+                    <img class="img-fluid" src="../resources/images/modal-logo.png" alt="logo">
+                    <p class="modalTitle">Login to your account</p>
+                </div>
 
+                <form action="" class="modal-form">
+                    <div class="form-group">
+                        <label for="">Mobile Number</label>
+                        <input type="text" placeholder="+91 999 999 9999">
+                    </div>
+                    <div class="text-center">
+                        <button type="" class="modal-btn page-btn">Next</button>
+                    </div>
+                </form>
+
+                <div class="modal-social-login">
+                    <a href="#">
+                        <button class="page-btn facebook">
+                            <img class="img-fluid mr-2 " src="../resources/images/facebook-login.png" alt="facebook-logo"> 
+                            Login with Facebook
+                        </button>
+                    </a>
+
+                    <a href="#">
+                        <button class="page-btn gmail">
+                            <img class="img-fluid mr-2 " src="../resources/images/gmail-login.png" alt="gmail-logo"> 
+                            Continue with Google
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 footer" >
+                <p>Don't have an account? <a href=""> Register for free</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- registration modal -->
+<div class="modal fade loginregisterModal" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <button type="button" class="close d-flex justify-content-end" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <img class="img-fluid" src="../resources/images/modal-close.png" alt="close">
+                </span>
+            </button>
+            
+            <div class="modal-body">
+                <div class="modal-logo text-center">
+                    <img class="img-fluid" src="../resources/images/modal-logo.png" alt="logo">
+                    <p class="modalTitle">Create your free account</p>
+                </div>
+
+                <form action="" class="modal-form">
+                    <div class="form-group">
+                        <label for="">Mobile Number</label>
+                        <input type="text" placeholder="+91 | 999 999 9999">
+                    </div>
+                    <div class="text-center">
+                        <button type="" class="modal-btn page-btn">Next</button>
+                    </div>
+                </form>
+
+                <div class="modal-social-login">
+                    <a href="#">
+                        <button class="page-btn facebook">
+                            <img class="img-fluid mr-2 " src="../resources/images/facebook-login.png" alt="facebook-logo"> 
+                            Login with Facebook
+                        </button>
+                    </a>
+
+                    <a href="#">
+                        <button class="page-btn gmail">
+                            <img class="img-fluid mr-2 " src="../resources/images/gmail-login.png" alt="gmail-logo"> 
+                            Continue with Google
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 footer" >
+                <p>Don't have an account? <a href=""> Register for free</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- otp modal -->
+<div class="modal fade loginregisterModal" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="otpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <button type="button" class="close d-flex justify-content-end" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <img class="img-fluid" src="../resources/images/modal-close.png" alt="close">
+                </span>
+            </button>
+            
+            <div class="modal-body">
+                <div class="modal-logo text-center">
+                    <img class="img-fluid" src="../resources/images/modal-logo.png" alt="logo">
+                    <p class="modalTitle">Verify your mobile number</p>
+                </div>
+
+                <form action="" class="modal-form otp-form">
+                    <div class="form-group">
+                        <label for="">Verify your mobile number</label>
+                        <div class="userInput">
+                            <input type="number" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')"> -
+                            <input type="number" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">-
+                            <input type="number" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">-
+                            <input type="number" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">-
+                            <input type="number" id="fifth" maxlength="1">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="" class="modal-btn page-btn">Next</button>
+                    </div>
+                </form>
+
+                <div class="modal-social-login">
+                    <a href="#">
+                        <button class="page-btn facebook">
+                            <img class="img-fluid mr-2 " src="../resources/images/facebook-login.png" alt="facebook-logo"> 
+                            Login with Facebook
+                        </button>
+                    </a>
+
+                    <a href="#">
+                        <button class="page-btn gmail">
+                            <img class="img-fluid mr-2 " src="../resources/images/gmail-login.png" alt="gmail-logo"> 
+                            Continue with Google
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-2 footer" >
+                <p>Don't have an account? <a href=""> Register for free</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -678,5 +833,12 @@
     <script src="../resources/js/popper.min.js"></script>
     <script src="../resources/js/bootstrap.min.js"></script>
     <script src="../resources/js/main.js"></script>
+    <script>
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+    </script>
 </body>
 </html>
